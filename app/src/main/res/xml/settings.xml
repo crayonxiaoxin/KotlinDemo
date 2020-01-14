@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Preference
+        app:iconSpaceReserved="false"
+        app:key="clear_cache"
+        app:title="清除缓存" />
+    <SwitchPreferenceCompat
+        app:iconSpaceReserved="false"
+        app:key="push"
+        app:title="推送通知" />
+    <SwitchPreferenceCompat
+        app:iconSpaceReserved="false"
+        app:key="no_wifi"
+        app:title="非wifi下加载图片" />
+    <Preference
+        app:iconSpaceReserved="false"
+        app:key="about"
+        app:title="关于" />
+</PreferenceScreen>

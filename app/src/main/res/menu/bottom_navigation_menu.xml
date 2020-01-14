@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:icon="@mipmap/bottom_home_icon"
+        android:title="首页" />
+    <item
+        android:id="@+id/mv"
+        android:icon="@mipmap/bottom_mv_unselect"
+        android:title="MV" />
+    <item
+        android:id="@+id/vbang"
+        android:icon="@mipmap/bottom_vlist_unselect"
+        android:title="V榜" />
+    <item
+        android:id="@+id/mv_list"
+        android:icon="@mipmap/bottom_mvlist_unselect"
+        android:title="悦单" />
+</menu>
