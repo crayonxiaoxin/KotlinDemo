@@ -4,7 +4,7 @@ import com.ormediagroup.kotlindemo.R
 import com.ormediagroup.kotlindemo.base.BaseFragment
 import com.ormediagroup.kotlindemo.ui.fragment.HomeFragment
 import com.ormediagroup.kotlindemo.ui.fragment.MVFragment
-import com.ormediagroup.kotlindemo.ui.fragment.MVListFragment
+import com.ormediagroup.kotlindemo.ui.fragment.YueDanFragment
 import com.ormediagroup.kotlindemo.ui.fragment.VBangFragment
 
 /**
@@ -14,7 +14,7 @@ class FragmentUtil private constructor() {
     val homeFragment by lazy { HomeFragment() }
     val mvFragment by lazy { MVFragment() }
     val vBangFragment by lazy { VBangFragment() }
-    val mvListFragment by lazy { MVListFragment() }
+    val mvListFragment by lazy { YueDanFragment() }
 
     companion object {
         val fragmentUtil by lazy { FragmentUtil() }

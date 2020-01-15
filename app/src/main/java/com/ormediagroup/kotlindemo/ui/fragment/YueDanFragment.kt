@@ -5,29 +5,33 @@ import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.ormediagroup.kotlindemo.R
-import com.ormediagroup.kotlindemo.adapter.HomeAdapter
+import com.ormediagroup.kotlindemo.adapter.YueDanAdapter
 import com.ormediagroup.kotlindemo.base.BaseFragment
 import com.ormediagroup.kotlindemo.base.BaseListAdapter
 import com.ormediagroup.kotlindemo.base.BaseListFragment
 import com.ormediagroup.kotlindemo.base.BaseListPresenter
-import com.ormediagroup.kotlindemo.model.HomeBean
-import com.ormediagroup.kotlindemo.model.HomeData
-import com.ormediagroup.kotlindemo.presenter.impl.HomePresenterImpl
-import com.ormediagroup.kotlindemo.view.HomeView
-import com.ormediagroup.kotlindemo.widget.HomeItemView
+import com.ormediagroup.kotlindemo.model.PlayLists
+import com.ormediagroup.kotlindemo.model.YueDanBean
+import com.ormediagroup.kotlindemo.model.YueDanData
+import com.ormediagroup.kotlindemo.presenter.impl.YueDanPresenterImpl
+import com.ormediagroup.kotlindemo.view.YueDanView
+import com.ormediagroup.kotlindemo.widget.YueDanItemView
 import kotlinx.android.synthetic.main.fragment_home.*
-import org.jetbrains.anko.support.v4.find
 
 /**
  * Created by Lau on 2020-01-14.
+ * 可变的
+ * YueDanView
+ * YueDanAdapter
+ * YueDanPresenterImpl
  */
-class HomeFragment : BaseListFragment<HomeBean, HomeData, HomeItemView>() {
-    override fun getListAdapter(): BaseListAdapter<HomeData, HomeItemView> {
-        return HomeAdapter()
+class YueDanFragment : BaseListFragment<YueDanBean, PlayLists, YueDanItemView>() {
+    override fun getListAdapter(): BaseListAdapter<PlayLists, YueDanItemView> {
+        return YueDanAdapter()
     }
 
     override fun getListPresenter(): BaseListPresenter {
-        return HomePresenterImpl(this)
+        return YueDanPresenterImpl(this)
     }
 
     override fun onDestroyView() {

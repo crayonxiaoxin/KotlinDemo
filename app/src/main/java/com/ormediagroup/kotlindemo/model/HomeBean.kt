@@ -6,12 +6,12 @@ package com.ormediagroup.kotlindemo.model
 data class HomeBean(
     val code: String,
     val cost: Int,
-    val `data`: List<Data>,
+    val `data`: List<HomeData>,
     val msg: String,
     val now: Long
 )
 
-data class Data(
+data class HomeData(
     val clickUrl: String,
     val description: String,
     val hdUrl: String,
